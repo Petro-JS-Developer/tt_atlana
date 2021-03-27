@@ -1,0 +1,33 @@
+.user {
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+  }
+
+  &-avatar {
+    margin-right: 40px;
+
+    &__img {
+      width: 100%;
+      max-width: 210px;
+      height: auto;
+    }
+
+  }
+
+  &__biography {
+    padding-left: 15px;
+    text-align: left;
+  }
+}
+
+@media (max-width: 768px) {
+  .user {
+    font-size: 16px;
+    &-avatar {
+      margin: 0 20px;
+    }
+  }
+}

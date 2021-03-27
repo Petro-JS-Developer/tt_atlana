@@ -1,0 +1,67 @@
+.listRepos {
+
+  &__search {
+    margin-top: 20px;
+    width: 80%;
+    font-size: 22px;
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+  }
+
+  &__item {
+    width: 100%;
+  }
+
+  &__item_wrapper {
+    text-decoration: none;
+    color: #000;
+  }
+}
+
+.repo-item {
+  display: flex;
+  padding: 8px 8px 8px 5px;
+  align-items: center;
+  border: 1px solid black;
+  cursor: pointer;
+  font-size: 18px;
+  margin: 0 auto;
+
+  &:hover {
+    background-color: gray;
+  }
+
+  &__infoAboutRepo {
+    margin-left: auto;
+    margin-right: 0;
+
+    &__forks {}
+
+    &__stars {}
+  }
+
+  &__name {
+    &::first-letter {
+      text-transform: uppercase;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .listRepos {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .listRepos{
+    &__search {
+      font-size: 18px;
+    }
+  }
+}
