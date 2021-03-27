@@ -33,7 +33,7 @@ function App() {
           <>
             <h1 className="users__title">GitHub Searcher</h1>
             <Switch>
-              <Route exact path="/">
+              <Route path="/tt_atlana">
                 {users.length > 0 && (
                 <ListUser
                   users={users}
